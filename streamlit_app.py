@@ -1,5 +1,6 @@
 # Import python packages
 import streamlit as st
+import requests
 from snowflake.snowpark.functions import col
 cnx=st.connection("snowflake")
 
@@ -71,7 +72,7 @@ if ingredients_list:
 
 
 # New section to display fruityvice nutrion information
-import requests
+
 
 #st.text(fruityvice_response.json())
 
