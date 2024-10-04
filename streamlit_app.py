@@ -66,3 +66,9 @@ if ingredients_list:
 
 #my_dataframe = session.table("smoothies.public.oak")
 #st.dataframe(data=my_dataframe, use_container_width=True)
+
+
+# New section to display fruityvice nutrion information
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
